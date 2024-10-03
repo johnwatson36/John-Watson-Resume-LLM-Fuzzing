@@ -1,0 +1,50 @@
+run in order:
+
+python temperature_calculator.py - generates the best temp value
+outputs temperature value to - optimal_temperature.txt
+
+python main.py - uses temp value and generates APIs to be used
+outputs api calls to - api.csv
+
+
+
+
+
+The temperature score in this setup relies on a quality evaluation of the generated API calls. The quality of these API calls is assessed based on specific metrics defined in the evaluate_api_quality function. These metrics are used to determine the "score" of each generated API call, which in turn is used to adjust the temperature.
+
+Metrics Used for Deciding Temperature Value
+The metrics used to score the generated API calls are:
+
+Number of Parameters:
+
+APIs with more parameters are often considered more complex and useful for testing purposes.
+Metric: If an API has more than 3 parameters, it receives a higher score. This encourages the generation of more sophisticated API calls rather than trivial ones.
+Uniqueness of Parameter Names:
+
+If all the parameter names in an API are unique, it indicates a well-formed and meaningful API call.
+Metric: If all parameter names in the list are unique (no duplicates), the API gets a higher score. This ensures that the parameters serve distinct purposes.
+Validity of API Name:
+
+Ensures that the generated API call is a valid PyTorch API call by checking if it starts with "torch.".
+Metric: If the API name is valid (begins with "torch."), it gets a higher score. This helps to filter out irrelevant or incorrect API calls.
+How the Metrics Affect the Temperature
+The temperature adjustment process works as follows:
+
+High Average Score:
+
+If the average score of the generated APIs is high, it means that the APIs are already quite relevant, complex, and well-formed. Thus, the temperature is decreased to focus on generating more of these high-quality, relevant outputs.
+Decreasing the temperature reduces randomness and increases determinism, encouraging the model to stick with what it knows is effective.
+Low Average Score:
+
+If the average score is low, it indicates that the generated APIs are not diverse or creative enough, or they may not be relevant or useful.
+In this case, the temperature is increased to encourage more diversity and creativity, which could lead to the discovery of better API calls that may not be commonly generated at lower temperatures.
+Moderate Average Score:
+
+If the average score is moderate, the temperature is kept the same. This indicates a balance between creativity and relevance.
+Summary
+The temperature score relies on:
+
+Number of Parameters: More parameters generally suggest more complex and useful APIs.
+Uniqueness of Parameter Names: Ensures that each parameter has a distinct purpose, indicating a well-formed API.
+Validity of API Name: Confirms that the API call is relevant and from the PyTorch library.
+These metrics together help in determining whether to increase, decrease, or maintain the temperature to balance the creativity and relevance of the generated APIs. By adjusting the temperature based on these scores, the model can dynamically improve the quality of its outputs.
