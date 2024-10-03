@@ -3,7 +3,7 @@ from openai import OpenAI
 from typing import Optional, Dict, Any, List
 import json  # Import the json module for parsing JSON content
 
-client = OpenAI(api_key="my api code")
+client = OpenAI(api_key="my api code`")
 
 def generate_api_calls(
     num_calls: int = 10,  # Number of API calls to generate
