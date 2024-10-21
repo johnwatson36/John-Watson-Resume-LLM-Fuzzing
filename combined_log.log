@@ -1,0 +1,554 @@
+2024-10-21 16:42:40,119 - INFO - Starting the entire program...
+2024-10-21 16:42:40,119 - INFO - Starting temperature optimization process...
+2024-10-21 16:42:40,119 - INFO - 
+--- Round with Temperature 1.00 ---
+2024-10-21 16:42:40,119 - INFO - Starting API generation with 10 calls using model nousresearch/hermes-3-llama-3.1-405b:free and temperature 1.0
+2024-10-21 16:42:40,119 - INFO - Sending request to OpenRouter API (Attempt 1/3)...
+2024-10-21 16:42:40,838 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 16:42:40,839 - INFO - Retrying request to /chat/completions in 0.494883 seconds
+2024-10-21 16:42:41,846 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 16:42:41,855 - INFO - Retrying request to /chat/completions in 0.883701 seconds
+2024-10-21 16:42:43,222 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 16:42:43,243 - ERROR - Error during API generation (Attempt 1/3): Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-day', 'code': 429}}
+2024-10-21 16:42:43,243 - INFO - Retrying in 2.0 seconds...
+2024-10-21 16:42:45,244 - INFO - Sending request to OpenRouter API (Attempt 2/3)...
+2024-10-21 16:42:45,766 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 16:42:45,802 - INFO - Retrying request to /chat/completions in 0.399114 seconds
+2024-10-21 16:42:46,893 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 16:42:46,895 - INFO - Retrying request to /chat/completions in 0.956357 seconds
+2024-10-21 16:42:48,375 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 16:42:48,377 - ERROR - Error during API generation (Attempt 2/3): Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-day', 'code': 429}}
+2024-10-21 16:42:48,377 - INFO - Retrying in 2.0 seconds...
+2024-10-21 16:42:50,378 - INFO - Sending request to OpenRouter API (Attempt 3/3)...
+2024-10-21 16:42:50,904 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 16:42:50,909 - INFO - Retrying request to /chat/completions in 0.378471 seconds
+2024-10-21 16:42:51,769 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 16:42:51,781 - INFO - Retrying request to /chat/completions in 0.775089 seconds
+2024-10-21 16:42:53,064 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 16:42:53,077 - ERROR - Error during API generation (Attempt 3/3): Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-day', 'code': 429}}
+2024-10-21 16:42:53,078 - ERROR - Failed to generate API calls after maximum retries.
+2024-10-21 16:42:53,078 - ERROR - Failed to generate API calls.
+2024-10-21 16:42:53,079 - INFO - Optimal temperature calculated: 1.00 with Highest Average Score: 0.00
+2024-10-21 16:42:53,079 - INFO - Read optimal temperature: 1.0
+2024-10-21 16:42:53,080 - INFO - Optimal temperature for API generation: 1.0
+2024-10-21 16:42:53,080 - INFO - Starting API generation with 10 calls using model nousresearch/hermes-3-llama-3.1-405b:free and temperature 1.0
+2024-10-21 16:42:53,080 - INFO - Sending request to OpenRouter API (Attempt 1/3)...
+2024-10-21 16:42:53,589 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 16:42:53,601 - INFO - Retrying request to /chat/completions in 0.404105 seconds
+2024-10-21 16:42:54,598 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 16:42:54,598 - INFO - Retrying request to /chat/completions in 0.791228 seconds
+2024-10-21 16:42:56,032 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 16:42:56,043 - ERROR - Error during API generation (Attempt 1/3): Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-min', 'code': 429}}
+2024-10-21 16:42:56,044 - INFO - Retrying in 2.0 seconds...
+2024-10-21 16:42:58,049 - INFO - Sending request to OpenRouter API (Attempt 2/3)...
+2024-10-21 16:42:58,589 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 16:42:58,594 - INFO - Retrying request to /chat/completions in 0.421499 seconds
+2024-10-21 16:42:59,521 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 16:42:59,523 - INFO - Retrying request to /chat/completions in 0.857242 seconds
+2024-10-21 16:43:00,914 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 16:43:00,914 - ERROR - Error during API generation (Attempt 2/3): Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-day', 'code': 429}}
+2024-10-21 16:43:00,914 - INFO - Retrying in 2.0 seconds...
+2024-10-21 16:43:02,916 - INFO - Sending request to OpenRouter API (Attempt 3/3)...
+2024-10-21 16:43:03,479 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 16:43:03,480 - INFO - Retrying request to /chat/completions in 0.456533 seconds
+2024-10-21 16:43:04,528 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 16:43:04,566 - INFO - Retrying request to /chat/completions in 0.841356 seconds
+2024-10-21 16:43:05,945 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 16:43:05,946 - ERROR - Error during API generation (Attempt 3/3): Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-day', 'code': 429}}
+2024-10-21 16:43:05,946 - ERROR - Failed to generate API calls after maximum retries.
+2024-10-21 16:43:05,946 - ERROR - Failed to generate API calls.
+2024-10-21 16:43:05,952 - INFO - Loaded apis.csv successfully.
+2024-10-21 16:43:05,952 - INFO - Data columns: Index(['api_name', 'parameters'], dtype='object')
+2024-10-21 16:43:05,955 - INFO - Number of parameters calculated for each API.
+2024-10-21 16:43:05,955 - INFO - API full call uniqueness calculated.
+2024-10-21 16:43:05,956 - INFO - Uniqueness of API calls determined.
+2024-10-21 16:43:05,956 - INFO - Validating PyTorch APIs...
+2024-10-21 16:43:05,956 - INFO - API 'torch.nn.functional.adaptive_avg_pool3d' is valid.
+2024-10-21 16:43:05,957 - INFO - API 'torch.sparse.softmax' is valid.
+2024-10-21 16:43:05,957 - INFO - API 'torch.distributions.kl.kl_divergence' is valid.
+2024-10-21 16:43:05,957 - INFO - API 'torch.utils.data.random_split' is valid.
+2024-10-21 16:43:05,962 - INFO - Updated apis.csv file saved with valid APIs only.
+2024-10-21 16:43:06,095 - INFO - Graph for number of parameters per API created and saved as 'api_graphical_results/parameters_per_api.png'.
+2024-10-21 16:43:06,210 - INFO - Graph for API call uniqueness created and saved as 'api_graphical_results/api_call_uniqueness.png'.
+2024-10-21 16:43:06,323 - INFO - Graph for API validity created and saved as 'api_graphical_results/validity_of_apis.png'.
+2024-10-21 16:43:06,323 - INFO - Starting Automated PyTorch API Tester...
+2024-10-21 16:43:06,323 - INFO - APIs loaded successfully from apis.csv
+2024-10-21 16:43:06,323 - INFO - Analyzing and generating programs for the APIs listed in apis.csv:
+2024-10-21 16:43:06,323 - INFO - Program 1 - torch.nn.functional.adaptive_avg_pool3d with parameters ['input', 'output_size']
+2024-10-21 16:43:06,324 - INFO - Program 2 - torch.sparse.softmax with parameters ['input', 'dim', 'dtype']
+2024-10-21 16:43:06,325 - INFO - Program 3 - torch.distributions.kl.kl_divergence with parameters ['p', 'q']
+2024-10-21 16:43:06,327 - INFO - Program 4 - torch.utils.data.random_split with parameters ['dataset', 'lengths', 'generator']
+2024-10-21 16:43:06,948 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 16:43:06,958 - INFO - Retrying request to /chat/completions in 0.457489 seconds
+2024-10-21 16:43:06,982 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 16:43:06,983 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 16:43:06,984 - INFO - Retrying request to /chat/completions in 0.401439 seconds
+2024-10-21 16:43:07,018 - INFO - Retrying request to /chat/completions in 0.398177 seconds
+2024-10-21 16:43:07,262 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 16:43:07,273 - INFO - Retrying request to /chat/completions in 0.437275 seconds
+2024-10-21 16:43:07,899 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 16:43:07,919 - INFO - Retrying request to /chat/completions in 0.765566 seconds
+2024-10-21 16:43:07,921 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 16:43:07,922 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 16:43:07,922 - INFO - Retrying request to /chat/completions in 0.964441 seconds
+2024-10-21 16:43:07,940 - INFO - Retrying request to /chat/completions in 0.755591 seconds
+2024-10-21 16:43:08,221 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 16:43:08,221 - INFO - Retrying request to /chat/completions in 0.880850 seconds
+2024-10-21 16:43:09,164 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 16:43:09,179 - ERROR - Error occurred while generating new program: Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-day', 'code': 429}}
+2024-10-21 16:43:09,180 - WARNING - Failed to generate a valid program. Retrying...
+2024-10-21 16:43:09,271 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 16:43:09,271 - ERROR - Error occurred while generating new program: Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-day', 'code': 429}}
+2024-10-21 16:43:09,271 - WARNING - Failed to generate a valid program. Retrying...
+2024-10-21 16:43:09,394 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 16:43:09,411 - ERROR - Error occurred while generating new program: Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-day', 'code': 429}}
+2024-10-21 16:43:09,411 - WARNING - Failed to generate a valid program. Retrying...
+2024-10-21 16:43:09,565 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 16:43:09,568 - ERROR - Error occurred while generating new program: Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-day', 'code': 429}}
+2024-10-21 16:43:09,568 - WARNING - Failed to generate a valid program. Retrying...
+2024-10-21 16:43:09,732 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 16:43:09,744 - INFO - Retrying request to /chat/completions in 0.480870 seconds
+2024-10-21 16:43:09,769 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 16:43:09,779 - INFO - Retrying request to /chat/completions in 0.420143 seconds
+2024-10-21 16:43:09,896 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 16:43:09,909 - INFO - Retrying request to /chat/completions in 0.497657 seconds
+2024-10-21 16:43:10,075 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 16:43:10,076 - INFO - Retrying request to /chat/completions in 0.464486 seconds
+2024-10-21 16:43:10,690 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 16:43:10,710 - INFO - Retrying request to /chat/completions in 0.772764 seconds
+2024-10-21 16:43:10,776 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 16:43:10,789 - INFO - Retrying request to /chat/completions in 0.828942 seconds
+2024-10-21 16:43:10,819 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 16:43:10,819 - INFO - Retrying request to /chat/completions in 0.941621 seconds
+2024-10-21 16:43:10,891 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 16:43:10,895 - INFO - Retrying request to /chat/completions in 0.878837 seconds
+2024-10-21 16:43:11,789 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 16:43:11,802 - ERROR - Error occurred while generating new program: Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-min', 'code': 429}}
+2024-10-21 16:43:11,802 - WARNING - Failed to generate a valid program. Retrying...
+2024-10-21 16:43:12,059 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 16:43:12,071 - ERROR - Error occurred while generating new program: Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-min', 'code': 429}}
+2024-10-21 16:43:12,071 - WARNING - Failed to generate a valid program. Retrying...
+2024-10-21 16:43:12,136 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 16:43:12,140 - ERROR - Error occurred while generating new program: Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-min', 'code': 429}}
+2024-10-21 16:43:12,140 - WARNING - Failed to generate a valid program. Retrying...
+2024-10-21 16:43:12,244 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 16:43:12,259 - ERROR - Error occurred while generating new program: Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-min', 'code': 429}}
+2024-10-21 16:43:12,259 - WARNING - Failed to generate a valid program. Retrying...
+2024-10-21 16:43:12,273 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 16:43:12,310 - INFO - Retrying request to /chat/completions in 0.416817 seconds
+2024-10-21 16:43:12,451 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 16:43:12,451 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 16:43:12,452 - INFO - Retrying request to /chat/completions in 0.456323 seconds
+2024-10-21 16:43:12,453 - INFO - Retrying request to /chat/completions in 0.453390 seconds
+2024-10-21 16:43:12,646 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 16:43:12,647 - INFO - Retrying request to /chat/completions in 0.411876 seconds
+2024-10-21 16:43:13,130 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 16:43:13,132 - INFO - Retrying request to /chat/completions in 0.806223 seconds
+2024-10-21 16:43:13,183 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 16:43:13,189 - INFO - Retrying request to /chat/completions in 0.979842 seconds
+2024-10-21 16:43:13,484 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 16:43:13,484 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 16:43:13,485 - INFO - Retrying request to /chat/completions in 0.992469 seconds
+2024-10-21 16:43:13,490 - INFO - Retrying request to /chat/completions in 0.799358 seconds
+2024-10-21 16:43:14,510 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 16:43:14,512 - ERROR - Error occurred while generating new program: Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-min', 'code': 429}}
+2024-10-21 16:43:14,512 - WARNING - Failed to generate a valid program. Retrying...
+2024-10-21 16:43:14,528 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 16:43:14,541 - ERROR - Error occurred while generating new program: Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-min', 'code': 429}}
+2024-10-21 16:43:14,541 - WARNING - Failed to generate a valid program. Retrying...
+2024-10-21 16:43:14,593 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 16:43:14,593 - ERROR - Error occurred while generating new program: Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-min', 'code': 429}}
+2024-10-21 16:43:14,594 - WARNING - Failed to generate a valid program. Retrying...
+2024-10-21 16:43:14,783 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 16:43:14,785 - ERROR - Error occurred while generating new program: Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-min', 'code': 429}}
+2024-10-21 16:43:14,785 - WARNING - Failed to generate a valid program. Retrying...
+2024-10-21 16:43:14,787 - INFO - Statistics updated: ['2024-10-21 16:43:14', 4, 0, 0, '0/1451', 12, 8.46]
+2024-10-21 16:43:14,789 - INFO - 
+Final Statistics for this run:
+2024-10-21 16:43:14,789 - INFO - Timestamp,Total programs,Valid programs,Buggy programs,API coverage,Program recalls,Runtime (seconds)
+2024-10-21 16:43:14,789 - INFO - 2024-10-21 16:43:14,4,0,0,0/1451,12,8.46
+2024-10-21 16:43:14,789 - INFO - 
+Total runtime: 0:00:08.463057
+2024-10-21 16:43:14,789 - INFO - Total runtime of the entire program: 0:00:34.670830
+2024-10-21 17:10:17,621 - INFO - Starting the entire program...
+2024-10-21 17:10:17,623 - INFO - Starting temperature optimization process...
+2024-10-21 17:10:17,623 - INFO - 
+--- Round with Temperature 1.00 ---
+2024-10-21 17:10:17,623 - INFO - Starting API generation with 10 calls using model nousresearch/hermes-3-llama-3.1-405b:free and temperature 1.0
+2024-10-21 17:10:17,623 - INFO - Sending request to OpenRouter API (Attempt 1/3)...
+2024-10-21 17:10:18,804 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 17:10:18,809 - INFO - Retrying request to /chat/completions in 0.486635 seconds
+2024-10-21 17:10:19,832 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 17:10:19,834 - INFO - Retrying request to /chat/completions in 0.986532 seconds
+2024-10-21 17:10:21,609 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 17:10:21,624 - ERROR - Error during API generation (Attempt 1/3): Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-day', 'code': 429}}
+2024-10-21 17:10:21,624 - INFO - Retrying in 2.0 seconds...
+2024-10-21 17:10:23,627 - INFO - Sending request to OpenRouter API (Attempt 2/3)...
+2024-10-21 17:10:24,148 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 17:10:24,159 - INFO - Retrying request to /chat/completions in 0.407658 seconds
+2024-10-21 17:10:25,106 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 17:10:25,108 - INFO - Retrying request to /chat/completions in 0.824196 seconds
+2024-10-21 17:10:26,479 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 17:10:26,482 - ERROR - Error during API generation (Attempt 2/3): Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-day', 'code': 429}}
+2024-10-21 17:10:26,482 - INFO - Retrying in 2.0 seconds...
+2024-10-21 17:10:28,487 - INFO - Sending request to OpenRouter API (Attempt 3/3)...
+2024-10-21 17:10:28,993 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 17:10:29,010 - INFO - Retrying request to /chat/completions in 0.447031 seconds
+2024-10-21 17:10:30,345 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 17:10:30,350 - INFO - Retrying request to /chat/completions in 0.973226 seconds
+2024-10-21 17:10:31,967 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 17:10:31,969 - ERROR - Error during API generation (Attempt 3/3): Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-day', 'code': 429}}
+2024-10-21 17:10:31,969 - ERROR - Failed to generate API calls after maximum retries.
+2024-10-21 17:10:31,969 - ERROR - Failed to generate API calls.
+2024-10-21 17:10:31,971 - INFO - Optimal temperature calculated: 1.00 with Highest Average Score: 0.00
+2024-10-21 17:10:31,972 - INFO - Read optimal temperature: 1.0
+2024-10-21 17:10:31,972 - INFO - Optimal temperature for API generation: 1.0
+2024-10-21 17:10:31,972 - INFO - Starting API generation with 10 calls using model nousresearch/hermes-3-llama-3.1-405b:free and temperature 1.0
+2024-10-21 17:10:31,972 - INFO - Sending request to OpenRouter API (Attempt 1/3)...
+2024-10-21 17:10:32,514 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 17:10:32,514 - INFO - Retrying request to /chat/completions in 0.412707 seconds
+2024-10-21 17:10:33,451 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 17:10:33,454 - INFO - Retrying request to /chat/completions in 0.833701 seconds
+2024-10-21 17:10:34,781 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 17:10:34,799 - ERROR - Error during API generation (Attempt 1/3): Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-day', 'code': 429}}
+2024-10-21 17:10:34,799 - INFO - Retrying in 2.0 seconds...
+2024-10-21 17:10:36,802 - INFO - Sending request to OpenRouter API (Attempt 2/3)...
+2024-10-21 17:10:37,284 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 17:10:37,293 - INFO - Retrying request to /chat/completions in 0.455408 seconds
+2024-10-21 17:10:38,255 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 17:10:38,273 - INFO - Retrying request to /chat/completions in 0.809189 seconds
+2024-10-21 17:10:39,809 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 17:10:39,812 - ERROR - Error during API generation (Attempt 2/3): Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-day', 'code': 429}}
+2024-10-21 17:10:39,812 - INFO - Retrying in 2.0 seconds...
+2024-10-21 17:10:41,815 - INFO - Sending request to OpenRouter API (Attempt 3/3)...
+2024-10-21 17:10:42,507 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 17:10:42,510 - INFO - Retrying request to /chat/completions in 0.481156 seconds
+2024-10-21 17:10:43,605 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 17:10:43,609 - INFO - Retrying request to /chat/completions in 0.920441 seconds
+2024-10-21 17:10:45,242 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 17:10:45,244 - ERROR - Error during API generation (Attempt 3/3): Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-day', 'code': 429}}
+2024-10-21 17:10:45,244 - ERROR - Failed to generate API calls after maximum retries.
+2024-10-21 17:10:45,244 - ERROR - Failed to generate API calls.
+2024-10-21 17:10:45,254 - INFO - Loaded apis.csv successfully.
+2024-10-21 17:10:45,255 - INFO - Data columns: Index(['api_name', 'parameters'], dtype='object')
+2024-10-21 17:10:45,259 - INFO - Number of parameters calculated for each API.
+2024-10-21 17:10:45,260 - INFO - API full call uniqueness calculated.
+2024-10-21 17:10:45,262 - INFO - Uniqueness of API calls determined.
+2024-10-21 17:10:45,263 - INFO - Validating PyTorch APIs...
+2024-10-21 17:10:45,264 - INFO - API 'torch.nn.functional.adaptive_avg_pool3d' is valid.
+2024-10-21 17:10:45,264 - INFO - API 'torch.sparse.softmax' is valid.
+2024-10-21 17:10:45,264 - INFO - API 'torch.distributions.kl.kl_divergence' is valid.
+2024-10-21 17:10:45,264 - INFO - API 'torch.utils.data.random_split' is valid.
+2024-10-21 17:10:45,272 - INFO - Updated apis.csv file saved with valid APIs only.
+2024-10-21 17:10:45,392 - INFO - Graph for number of parameters per API created and saved as 'api_graphical_results/parameters_per_api.png'.
+2024-10-21 17:10:45,469 - INFO - Graph for API call uniqueness created and saved as 'api_graphical_results/api_call_uniqueness.png'.
+2024-10-21 17:10:45,543 - INFO - Graph for API validity created and saved as 'api_graphical_results/validity_of_apis.png'.
+2024-10-21 17:10:45,544 - INFO - Starting Automated PyTorch API Tester...
+2024-10-21 17:10:45,544 - INFO - APIs loaded successfully from apis.csv
+2024-10-21 17:10:45,544 - INFO - Analyzing and generating programs for the APIs listed in apis.csv:
+2024-10-21 17:10:45,544 - INFO - Program 1 - torch.nn.functional.adaptive_avg_pool3d with parameters ['input', 'output_size']
+2024-10-21 17:10:45,547 - INFO - Program 2 - torch.sparse.softmax with parameters ['input', 'dim', 'dtype']
+2024-10-21 17:10:45,547 - INFO - Program 3 - torch.distributions.kl.kl_divergence with parameters ['p', 'q']
+2024-10-21 17:10:45,550 - INFO - Program 4 - torch.utils.data.random_split with parameters ['dataset', 'lengths', 'generator']
+2024-10-21 17:10:46,287 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 17:10:46,301 - INFO - Retrying request to /chat/completions in 0.375516 seconds
+2024-10-21 17:10:46,306 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 17:10:46,307 - INFO - Retrying request to /chat/completions in 0.430189 seconds
+2024-10-21 17:10:46,307 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 17:10:46,307 - INFO - Retrying request to /chat/completions in 0.482176 seconds
+2024-10-21 17:10:46,325 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 17:10:46,340 - INFO - Retrying request to /chat/completions in 0.493748 seconds
+2024-10-21 17:10:47,080 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 17:10:47,081 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 17:10:47,082 - INFO - Retrying request to /chat/completions in 0.893971 seconds
+2024-10-21 17:10:47,084 - INFO - Retrying request to /chat/completions in 0.920728 seconds
+2024-10-21 17:10:47,282 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 17:10:47,308 - INFO - Retrying request to /chat/completions in 0.965413 seconds
+2024-10-21 17:10:47,395 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 17:10:47,398 - INFO - Retrying request to /chat/completions in 0.778095 seconds
+2024-10-21 17:10:48,295 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 17:10:48,296 - ERROR - Error occurred while generating new program: Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-min', 'code': 429}}
+2024-10-21 17:10:48,296 - WARNING - Failed to generate a valid program. Retrying...
+2024-10-21 17:10:48,556 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 17:10:48,557 - ERROR - Error occurred while generating new program: Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-min', 'code': 429}}
+2024-10-21 17:10:48,557 - WARNING - Failed to generate a valid program. Retrying...
+2024-10-21 17:10:48,594 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 17:10:48,594 - ERROR - Error occurred while generating new program: Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-min', 'code': 429}}
+2024-10-21 17:10:48,594 - WARNING - Failed to generate a valid program. Retrying...
+2024-10-21 17:10:48,699 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 17:10:48,701 - INFO - Retrying request to /chat/completions in 0.417701 seconds
+2024-10-21 17:10:48,840 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 17:10:48,843 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 17:10:48,844 - ERROR - Error occurred while generating new program: Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-min', 'code': 429}}
+2024-10-21 17:10:48,844 - WARNING - Failed to generate a valid program. Retrying...
+2024-10-21 17:10:48,845 - INFO - Retrying request to /chat/completions in 0.401261 seconds
+2024-10-21 17:10:48,951 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 17:10:48,961 - INFO - Retrying request to /chat/completions in 0.431313 seconds
+2024-10-21 17:10:49,193 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 17:10:49,195 - INFO - Retrying request to /chat/completions in 0.385830 seconds
+2024-10-21 17:10:49,461 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 17:10:49,463 - INFO - Retrying request to /chat/completions in 0.859339 seconds
+2024-10-21 17:10:49,638 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 17:10:49,640 - INFO - Retrying request to /chat/completions in 0.768055 seconds
+2024-10-21 17:10:49,926 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 17:10:49,929 - INFO - Retrying request to /chat/completions in 0.903373 seconds
+2024-10-21 17:10:50,230 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 17:10:50,230 - INFO - Retrying request to /chat/completions in 0.800617 seconds
+2024-10-21 17:10:50,658 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 17:10:50,661 - ERROR - Error occurred while generating new program: Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-min', 'code': 429}}
+2024-10-21 17:10:50,661 - WARNING - Failed to generate a valid program. Retrying...
+2024-10-21 17:10:50,966 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 17:10:50,966 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 17:10:50,969 - ERROR - Error occurred while generating new program: Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-min', 'code': 429}}
+2024-10-21 17:10:50,969 - WARNING - Failed to generate a valid program. Retrying...
+2024-10-21 17:10:50,973 - INFO - Retrying request to /chat/completions in 0.421533 seconds
+2024-10-21 17:10:51,305 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 17:10:51,306 - ERROR - Error occurred while generating new program: Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-min', 'code': 429}}
+2024-10-21 17:10:51,307 - WARNING - Failed to generate a valid program. Retrying...
+2024-10-21 17:10:51,466 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 17:10:51,469 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 17:10:51,469 - ERROR - Error occurred while generating new program: Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-min', 'code': 429}}
+2024-10-21 17:10:51,470 - WARNING - Failed to generate a valid program. Retrying...
+2024-10-21 17:10:51,481 - INFO - Retrying request to /chat/completions in 0.479067 seconds
+2024-10-21 17:10:51,557 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 17:10:51,571 - INFO - Retrying request to /chat/completions in 0.435831 seconds
+2024-10-21 17:10:51,726 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 17:10:51,738 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 17:10:51,739 - INFO - Retrying request to /chat/completions in 0.435372 seconds
+2024-10-21 17:10:51,740 - INFO - Retrying request to /chat/completions in 0.925432 seconds
+2024-10-21 17:10:52,332 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 17:10:52,332 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 17:10:52,333 - INFO - Retrying request to /chat/completions in 0.918981 seconds
+2024-10-21 17:10:52,333 - INFO - Retrying request to /chat/completions in 0.988466 seconds
+2024-10-21 17:10:52,470 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 17:10:52,482 - INFO - Retrying request to /chat/completions in 0.849184 seconds
+2024-10-21 17:10:52,940 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 17:10:52,942 - ERROR - Error occurred while generating new program: Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-min', 'code': 429}}
+2024-10-21 17:10:52,943 - WARNING - Failed to generate a valid program. Retrying...
+2024-10-21 17:10:53,508 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 17:10:53,510 - ERROR - Error occurred while generating new program: Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-min', 'code': 429}}
+2024-10-21 17:10:53,511 - WARNING - Failed to generate a valid program. Retrying...
+2024-10-21 17:10:53,630 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 17:10:53,638 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 17:10:53,638 - ERROR - Error occurred while generating new program: Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-min', 'code': 429}}
+2024-10-21 17:10:53,638 - WARNING - Failed to generate a valid program. Retrying...
+2024-10-21 17:10:53,653 - ERROR - Error occurred while generating new program: Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-min', 'code': 429}}
+2024-10-21 17:10:53,653 - WARNING - Failed to generate a valid program. Retrying...
+2024-10-21 17:10:53,654 - INFO - Statistics updated: ['2024-10-21 17:10:53', 4, 0, 0, '0/1451', 12, 8.11]
+2024-10-21 17:10:53,655 - INFO - 
+Final Statistics for this run:
+2024-10-21 17:10:53,656 - INFO - Timestamp,Total programs,Valid programs,Buggy programs,API coverage,Program recalls,Runtime (seconds)
+2024-10-21 17:10:53,656 - INFO - 2024-10-21 17:10:53,4,0,0,0/1451,12,8.11
+2024-10-21 17:10:53,656 - INFO - 
+Total runtime: 0:00:08.109869
+2024-10-21 17:10:53,656 - INFO - Total runtime of the entire program: 0:00:36.034643
+2024-10-21 21:06:57,301 - INFO - NumExpr defaulting to 8 threads.
+2024-10-21 21:06:58,036 - INFO - Starting the entire program...
+2024-10-21 21:06:58,037 - INFO - Starting temperature optimization process...
+2024-10-21 21:06:58,037 - INFO - 
+--- Round with Temperature 1.00 ---
+2024-10-21 21:06:58,037 - INFO - Starting API generation with 10 calls using model nousresearch/hermes-3-llama-3.1-405b:free and temperature 1.0
+2024-10-21 21:06:58,038 - INFO - Sending request to OpenRouter API (Attempt 1/3)...
+2024-10-21 21:06:59,160 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 21:06:59,160 - INFO - Retrying request to /chat/completions in 0.771737 seconds
+2024-10-21 21:07:00,631 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 21:07:00,632 - INFO - Retrying request to /chat/completions in 1.971431 seconds
+2024-10-21 21:07:03,341 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 21:07:03,345 - ERROR - Error during API generation (Attempt 1/3): Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-day', 'code': 429}}
+2024-10-21 21:07:03,345 - INFO - Retrying in 2.0 seconds...
+2024-10-21 21:07:05,351 - INFO - Sending request to OpenRouter API (Attempt 2/3)...
+2024-10-21 21:07:06,084 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 21:07:06,092 - INFO - Retrying request to /chat/completions in 0.943107 seconds
+2024-10-21 21:07:07,576 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 21:07:07,578 - INFO - Retrying request to /chat/completions in 1.981487 seconds
+2024-10-21 21:07:10,098 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 21:07:10,099 - ERROR - Error during API generation (Attempt 2/3): Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-day', 'code': 429}}
+2024-10-21 21:07:10,100 - INFO - Retrying in 2.0 seconds...
+2024-10-21 21:07:12,105 - INFO - Sending request to OpenRouter API (Attempt 3/3)...
+2024-10-21 21:07:12,656 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 21:07:12,656 - INFO - Retrying request to /chat/completions in 0.872442 seconds
+2024-10-21 21:07:14,160 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 21:07:14,161 - INFO - Retrying request to /chat/completions in 1.636347 seconds
+2024-10-21 21:07:16,319 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 21:07:16,320 - ERROR - Error during API generation (Attempt 3/3): Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-day', 'code': 429}}
+2024-10-21 21:07:16,320 - ERROR - Failed to generate API calls after maximum retries.
+2024-10-21 21:07:16,320 - ERROR - Failed to generate API calls.
+2024-10-21 21:07:16,321 - INFO - Optimal temperature calculated: 1.00 with Highest Average Score: 0.00
+2024-10-21 21:07:16,321 - INFO - Read optimal temperature: 1.0
+2024-10-21 21:07:16,321 - INFO - Optimal temperature for API generation: 1.0
+2024-10-21 21:07:16,321 - INFO - Starting API generation with 10 calls using model nousresearch/hermes-3-llama-3.1-405b:free and temperature 1.0
+2024-10-21 21:07:16,321 - INFO - Sending request to OpenRouter API (Attempt 1/3)...
+2024-10-21 21:07:16,870 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 21:07:16,883 - INFO - Retrying request to /chat/completions in 0.936673 seconds
+2024-10-21 21:07:18,480 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 21:07:18,482 - INFO - Retrying request to /chat/completions in 1.654126 seconds
+2024-10-21 21:07:20,702 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 21:07:20,705 - ERROR - Error during API generation (Attempt 1/3): Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-day', 'code': 429}}
+2024-10-21 21:07:20,706 - INFO - Retrying in 2.0 seconds...
+2024-10-21 21:07:22,706 - INFO - Sending request to OpenRouter API (Attempt 2/3)...
+2024-10-21 21:07:23,205 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 21:07:23,205 - INFO - Retrying request to /chat/completions in 0.949220 seconds
+2024-10-21 21:07:24,650 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 21:07:24,652 - INFO - Retrying request to /chat/completions in 1.916725 seconds
+2024-10-21 21:07:27,076 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 21:07:27,091 - ERROR - Error during API generation (Attempt 2/3): Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-day', 'code': 429}}
+2024-10-21 21:07:27,092 - INFO - Retrying in 2.0 seconds...
+2024-10-21 21:07:29,097 - INFO - Sending request to OpenRouter API (Attempt 3/3)...
+2024-10-21 21:07:29,880 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 21:07:29,881 - INFO - Retrying request to /chat/completions in 0.935103 seconds
+2024-10-21 21:07:31,344 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 21:07:31,358 - INFO - Retrying request to /chat/completions in 1.557579 seconds
+2024-10-21 21:07:33,469 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 21:07:33,472 - ERROR - Error during API generation (Attempt 3/3): Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-day', 'code': 429}}
+2024-10-21 21:07:33,472 - ERROR - Failed to generate API calls after maximum retries.
+2024-10-21 21:07:33,472 - ERROR - Failed to generate API calls.
+2024-10-21 21:07:33,490 - INFO - Loaded apis.csv successfully.
+2024-10-21 21:07:33,491 - INFO - Data columns: Index(['api_name', 'parameters'], dtype='object')
+2024-10-21 21:07:33,492 - INFO - Number of parameters calculated for each API.
+2024-10-21 21:07:33,492 - INFO - API full call uniqueness calculated.
+2024-10-21 21:07:33,493 - INFO - Uniqueness of API calls determined.
+2024-10-21 21:07:33,493 - INFO - Validating PyTorch APIs...
+2024-10-21 21:07:33,494 - INFO - API 'torch.nn.functional.adaptive_avg_pool3d' is valid.
+2024-10-21 21:07:33,495 - INFO - API 'torch.sparse.softmax' is valid.
+2024-10-21 21:07:33,495 - INFO - API 'torch.distributions.kl.kl_divergence' is valid.
+2024-10-21 21:07:33,495 - INFO - API 'torch.utils.data.random_split' is valid.
+2024-10-21 21:07:33,495 - WARNING - Invalid PyTorch API: torch.sdfsdf
+2024-10-21 21:07:33,495 - INFO - API 'torch.sdfsdf' is invalid.
+2024-10-21 21:07:33,597 - INFO - Graph for number of parameters per API created and saved as 'api_graphical_results/parameters_per_api.png'.
+2024-10-21 21:07:33,698 - INFO - Graph for API call uniqueness created and saved as 'api_graphical_results/api_call_uniqueness.png'.
+2024-10-21 21:07:33,778 - INFO - Graph for API validity created and saved as 'api_graphical_results/validity_of_apis.png'.
+2024-10-21 21:07:33,780 - INFO - Removing 1 invalid APIs from the CSV file.
+2024-10-21 21:07:33,782 - INFO - Updated apis.csv file saved with valid APIs only.
+2024-10-21 21:07:33,782 - INFO - Starting Automated PyTorch API Tester...
+2024-10-21 21:07:33,783 - INFO - APIs loaded successfully from apis.csv
+2024-10-21 21:07:33,783 - INFO - Analyzing and generating programs for the APIs listed in apis.csv:
+2024-10-21 21:07:33,785 - INFO - Program 1 - torch.nn.functional.adaptive_avg_pool3d with parameters ['input', 'output_size']
+2024-10-21 21:07:33,785 - INFO - Program 2 - torch.sparse.softmax with parameters ['input', 'dim', 'dtype']
+2024-10-21 21:07:33,788 - INFO - Program 3 - torch.distributions.kl.kl_divergence with parameters ['p', 'q']
+2024-10-21 21:07:33,788 - INFO - Program 4 - torch.utils.data.random_split with parameters ['dataset', 'lengths', 'generator']
+2024-10-21 21:07:34,468 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 21:07:34,469 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 21:07:34,469 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 21:07:34,469 - INFO - Retrying request to /chat/completions in 0.898417 seconds
+2024-10-21 21:07:34,471 - INFO - Retrying request to /chat/completions in 0.996955 seconds
+2024-10-21 21:07:34,478 - INFO - Retrying request to /chat/completions in 0.963645 seconds
+2024-10-21 21:07:34,483 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 21:07:34,499 - INFO - Retrying request to /chat/completions in 0.843732 seconds
+2024-10-21 21:07:36,161 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 21:07:36,161 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 21:07:36,162 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 21:07:36,162 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 21:07:36,163 - INFO - Retrying request to /chat/completions in 1.772752 seconds
+2024-10-21 21:07:36,163 - INFO - Retrying request to /chat/completions in 1.787494 seconds
+2024-10-21 21:07:36,164 - INFO - Retrying request to /chat/completions in 1.710532 seconds
+2024-10-21 21:07:36,164 - INFO - Retrying request to /chat/completions in 1.549433 seconds
+2024-10-21 21:07:38,115 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 21:07:38,116 - ERROR - Error occurred while generating new program: Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-min', 'code': 429}}
+2024-10-21 21:07:38,116 - WARNING - Failed to generate a valid program. Retrying...
+2024-10-21 21:07:38,256 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 21:07:38,269 - ERROR - Error occurred while generating new program: Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-min', 'code': 429}}
+2024-10-21 21:07:38,269 - WARNING - Failed to generate a valid program. Retrying...
+2024-10-21 21:07:38,400 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 21:07:38,414 - INFO - Retrying request to /chat/completions in 0.847058 seconds
+2024-10-21 21:07:38,435 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 21:07:38,449 - ERROR - Error occurred while generating new program: Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-min', 'code': 429}}
+2024-10-21 21:07:38,449 - WARNING - Failed to generate a valid program. Retrying...
+2024-10-21 21:07:38,661 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 21:07:38,683 - INFO - Retrying request to /chat/completions in 0.952704 seconds
+2024-10-21 21:07:38,704 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 21:07:38,705 - ERROR - Error occurred while generating new program: Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-min', 'code': 429}}
+2024-10-21 21:07:38,705 - WARNING - Failed to generate a valid program. Retrying...
+2024-10-21 21:07:38,766 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 21:07:38,766 - INFO - Retrying request to /chat/completions in 0.852488 seconds
+2024-10-21 21:07:39,155 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 21:07:39,155 - INFO - Retrying request to /chat/completions in 0.859012 seconds
+2024-10-21 21:07:40,047 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 21:07:40,068 - INFO - Retrying request to /chat/completions in 1.960942 seconds
+2024-10-21 21:07:40,222 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 21:07:40,222 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 21:07:40,223 - INFO - Retrying request to /chat/completions in 1.877370 seconds
+2024-10-21 21:07:40,231 - INFO - Retrying request to /chat/completions in 1.960478 seconds
+2024-10-21 21:07:40,348 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 21:07:40,349 - INFO - Retrying request to /chat/completions in 1.665104 seconds
+2024-10-21 21:07:42,330 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 21:07:42,331 - ERROR - Error occurred while generating new program: Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-min', 'code': 429}}
+2024-10-21 21:07:42,331 - WARNING - Failed to generate a valid program. Retrying...
+2024-10-21 21:07:42,336 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 21:07:42,337 - ERROR - Error occurred while generating new program: Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-min', 'code': 429}}
+2024-10-21 21:07:42,337 - WARNING - Failed to generate a valid program. Retrying...
+2024-10-21 21:07:42,384 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 21:07:42,388 - ERROR - Error occurred while generating new program: Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-min', 'code': 429}}
+2024-10-21 21:07:42,388 - WARNING - Failed to generate a valid program. Retrying...
+2024-10-21 21:07:42,476 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 21:07:42,504 - ERROR - Error occurred while generating new program: Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-min', 'code': 429}}
+2024-10-21 21:07:42,504 - WARNING - Failed to generate a valid program. Retrying...
+2024-10-21 21:07:42,709 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 21:07:42,711 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 21:07:42,712 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 21:07:42,713 - INFO - Retrying request to /chat/completions in 0.972200 seconds
+2024-10-21 21:07:42,713 - INFO - Retrying request to /chat/completions in 0.754879 seconds
+2024-10-21 21:07:42,730 - INFO - Retrying request to /chat/completions in 0.780456 seconds
+2024-10-21 21:07:42,908 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 21:07:42,910 - INFO - Retrying request to /chat/completions in 0.879069 seconds
+2024-10-21 21:07:44,035 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 21:07:44,043 - INFO - Retrying request to /chat/completions in 1.546376 seconds
+2024-10-21 21:07:44,044 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 21:07:44,135 - INFO - Retrying request to /chat/completions in 1.750463 seconds
+2024-10-21 21:07:44,186 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 21:07:44,198 - INFO - Retrying request to /chat/completions in 1.958661 seconds
+2024-10-21 21:07:44,446 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 21:07:44,448 - INFO - Retrying request to /chat/completions in 1.620106 seconds
+2024-10-21 21:07:45,938 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 21:07:45,940 - ERROR - Error occurred while generating new program: Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-min', 'code': 429}}
+2024-10-21 21:07:45,941 - WARNING - Failed to generate a valid program. Retrying...
+2024-10-21 21:07:46,330 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 21:07:46,343 - ERROR - Error occurred while generating new program: Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-min', 'code': 429}}
+2024-10-21 21:07:46,344 - WARNING - Failed to generate a valid program. Retrying...
+2024-10-21 21:07:46,645 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 21:07:46,646 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 21:07:46,648 - ERROR - Error occurred while generating new program: Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-min', 'code': 429}}
+2024-10-21 21:07:46,649 - WARNING - Failed to generate a valid program. Retrying...
+2024-10-21 21:07:46,649 - ERROR - Error occurred while generating new program: Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-min', 'code': 429}}
+2024-10-21 21:07:46,650 - WARNING - Failed to generate a valid program. Retrying...
+2024-10-21 21:07:46,651 - INFO - Statistics updated: ['2024-10-21 21:07:46', 4, 0, 0, '0/1429', 12, 12.87]
+2024-10-21 21:07:46,652 - INFO - 
+Final Statistics for this run:
+2024-10-21 21:07:46,652 - INFO - Timestamp,Total programs,Valid programs,Buggy programs,API coverage,Program recalls,Runtime (seconds)
+2024-10-21 21:07:46,652 - INFO - 2024-10-21 21:07:46,4,0,0,0/1429,12,12.87
+2024-10-21 21:07:46,652 - INFO - 
+Total runtime: 0:00:12.867403
+2024-10-21 21:07:46,652 - INFO - Total runtime of the entire program: 0:00:48.615963
+2024-10-21 21:14:53,864 - INFO - NumExpr defaulting to 8 threads.
+2024-10-21 21:14:54,330 - INFO - Starting the entire program...
+2024-10-21 21:14:54,331 - INFO - Starting temperature optimization process...
+2024-10-21 21:14:54,331 - INFO - 
+--- Round with Temperature 1.00 ---
+2024-10-21 21:14:54,331 - INFO - Starting API generation with 10 calls using model nousresearch/hermes-3-llama-3.1-405b:free and temperature 1.0
+2024-10-21 21:14:54,331 - INFO - Sending request to OpenRouter API (Attempt 1/3)...
+2024-10-21 21:14:55,121 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 21:14:55,143 - INFO - Retrying request to /chat/completions in 0.848351 seconds
+2024-10-21 21:14:56,500 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 21:14:56,501 - INFO - Retrying request to /chat/completions in 1.668100 seconds
+2024-10-21 21:14:58,678 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 21:14:58,700 - ERROR - Error during API generation (Attempt 1/3): Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-day', 'code': 429}}
+2024-10-21 21:14:58,700 - INFO - Retrying in 2.0 seconds...
+2024-10-21 21:15:00,706 - INFO - Sending request to OpenRouter API (Attempt 2/3)...
+2024-10-21 21:36:52,180 - INFO - NumExpr defaulting to 8 threads.
+2024-10-21 21:36:52,620 - INFO - Starting the entire program...
+2024-10-21 21:36:52,621 - INFO - Starting temperature optimization process...
+2024-10-21 21:36:52,621 - INFO - 
+--- Round with Temperature 1.00 ---
+2024-10-21 21:36:52,621 - INFO - Starting API generation with 10 calls using model nousresearch/hermes-3-llama-3.1-405b:free and temperature 1.0
+2024-10-21 21:36:52,621 - INFO - Sending request to OpenRouter API (Attempt 1/3)...
+2024-10-21 21:36:54,677 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 21:36:54,678 - INFO - Retrying request to /chat/completions in 0.792421 seconds
+2024-10-21 21:36:56,309 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 21:36:56,311 - INFO - Retrying request to /chat/completions in 1.761844 seconds
+2024-10-21 21:36:58,934 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 21:36:58,941 - ERROR - Error during API generation (Attempt 1/3): Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-day', 'code': 429}}
+2024-10-21 21:36:58,941 - INFO - Retrying in 2.0 seconds...
+2024-10-21 21:37:00,947 - INFO - Sending request to OpenRouter API (Attempt 2/3)...
+2024-10-21 21:37:01,546 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 21:37:01,560 - INFO - Retrying request to /chat/completions in 0.942632 seconds
+2024-10-21 21:37:03,375 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-10-21 21:37:03,387 - INFO - Retrying request to /chat/completions in 1.616542 seconds

@@ -1,50 +1,93 @@
-run in order:
+Guide to Running PyTorch API Generation and Testing
 
-python temperature_calculator.py - generates the best temp value
-outputs temperature value to - optimal_temperature.txt
+    1. Run the main script to generate APIs:
+    Command: `python main.py`
+    - This script uses calculates and then uses the optimal temperature value to generate PyTorch API calls.
+    - Output: The generated API calls are saved to `apis.csv`.
+    - API example:
+            - api_name,parameters
+            - torch.nn.functional.gumbel_softmax,"logits, tau, hard, eps, dim"
+            - torch.utils.data.dataloader.default_collate,batch
 
-python main.py - uses temp value and generates APIs to be used
-outputs api calls to - api.csv
+
+Metrics Used for Deciding Temperature Value:
+The quality of generated API calls is determined using the following metrics:
+
+    1. Number of Parameters:
+    - APIs with more parameters are often more complex and useful for testing.
+    - Metric: APIs with more than 3 parameters receive a higher score, promoting the generation of sophisticated API calls.
+
+    2. Uniqueness of Parameter Names:
+    - Ensures that parameters serve distinct purposes and contribute to a well-formed API.
+    - Metric: If all parameter names are unique, the API gets a higher score.
+
+    3. Validity of API Name:
+    - Confirms that the API call is valid by checking if it starts with 'torch.'.
+    - Metric: If the API name is valid (begins with 'torch.'), it receives a higher score.
+
+    How These Metrics Affect Temperature:
+
+    - High Average Score:
+    - If the generated APIs score highly, the temperature decreases, focusing on generating relevant, high-quality API calls.
+    
+    - Low Average Score:
+    - If the score is low, the temperature increases to introduce more diversity and creativity in generating APIs.
+
+    - Moderate Average Score:
+    - The temperature remains unchanged, maintaining a balance between creativity and relevance.
+
+    Summary of Metrics:
+    - Number of Parameters: More parameters indicate more complex and useful APIs.
+    - Uniqueness of Parameter Names: Ensures that each parameter serves a distinct purpose.
+    - Validity of API Name: Confirms that the API call is relevant and from the PyTorch library.
+    By adjusting the temperature based on these metrics, the model dynamically improves the quality of its generated APIs.
 
 
+Testing the APIs Using `pytorch_bug_analyzer.py`
+
+    Once the APIs are generated and saved to `apis.csv`, you can test the API calls with the PyTorch bug analyzer. This step checks if the generated API calls are valid and if they can be executed successfully with the provided parameters.
+
+    Steps to run the PyTorch Bug Analyzer:
+    1. Command: `python pytorch_bug_analyzer.py`
+    - This script reads the generated APIs from `apis.csv`, generates test programs, and checks if the parameters work correctly when executed.
+    - It evaluates the generated APIs on both CPU and GPU, checking for any errors or inconsistencies.
+
+    2. Outputs and Testing:
+    - The script generates test programs for each API and parameter set.
+    - It checks if the API works correctly with the provided parameters on both CPU and GPU.
+    - If an API call fails, it prints out the error and saves the buggy program.
+
+    Example Output:
+    - If an API fails due to syntax errors or incorrect parameter values, the script outputs:
+        - API call failed: torch.nn.functional.gumbel_softmax,"logits, tau, hard, eps, dim" Error: name 'logits' is not defined
+        - This indicates that the API could not run because `logits` (a parameter) was not properly defined.
+
+    - If the API call succeeds, it outputs:
+        Buggy Program Handling:
+        - If a program is found to be buggy (e.g., it produces different results on CPU and GPU), it is saved to a `buggy-programs` folder with details of the bug.
+        - The `pytorch_bug_analyzer.py` script will also print detailed information about the bug, including the CPU and GPU output for comparison.
 
 
+Final Statistics and Output:
 
-The temperature score in this setup relies on a quality evaluation of the generated API calls. The quality of these API calls is assessed based on specific metrics defined in the evaluate_api_quality function. These metrics are used to determine the "score" of each generated API call, which in turn is used to adjust the temperature.
+    At the end of the bug analysis, the script saves important statistics to `statistics.csv`:
+    - Total Programs Generated
+    - Valid Programs
+    - Buggy Programs
+    - API Coverage
+    - Program Recalls
+    - Total Runtime
 
-Metrics Used for Deciding Temperature Value
-The metrics used to score the generated API calls are:
+    To view the statistics, check the final lines of the `statistics.csv` file or the terminal output.
 
-Number of Parameters:
+    The results output to the terminal is also saved to a results.txt file
 
-APIs with more parameters are often considered more complex and useful for testing purposes.
-Metric: If an API has more than 3 parameters, it receives a higher score. This encourages the generation of more sophisticated API calls rather than trivial ones.
-Uniqueness of Parameter Names:
 
-If all the parameter names in an API are unique, it indicates a well-formed and meaningful API call.
-Metric: If all parameter names in the list are unique (no duplicates), the API gets a higher score. This ensures that the parameters serve distinct purposes.
-Validity of API Name:
+Summary of Steps:
 
-Ensures that the generated API call is a valid PyTorch API call by checking if it starts with "torch.".
-Metric: If the API name is valid (begins with "torch."), it gets a higher score. This helps to filter out irrelevant or incorrect API calls.
-How the Metrics Affect the Temperature
-The temperature adjustment process works as follows:
-
-High Average Score:
-
-If the average score of the generated APIs is high, it means that the APIs are already quite relevant, complex, and well-formed. Thus, the temperature is decreased to focus on generating more of these high-quality, relevant outputs.
-Decreasing the temperature reduces randomness and increases determinism, encouraging the model to stick with what it knows is effective.
-Low Average Score:
-
-If the average score is low, it indicates that the generated APIs are not diverse or creative enough, or they may not be relevant or useful.
-In this case, the temperature is increased to encourage more diversity and creativity, which could lead to the discovery of better API calls that may not be commonly generated at lower temperatures.
-Moderate Average Score:
-
-If the average score is moderate, the temperature is kept the same. This indicates a balance between creativity and relevance.
-Summary
-The temperature score relies on:
-
-Number of Parameters: More parameters generally suggest more complex and useful APIs.
-Uniqueness of Parameter Names: Ensures that each parameter has a distinct purpose, indicating a well-formed API.
-Validity of API Name: Confirms that the API call is relevant and from the PyTorch library.
-These metrics together help in determining whether to increase, decrease, or maintain the temperature to balance the creativity and relevance of the generated APIs. By adjusting the temperature based on these scores, the model can dynamically improve the quality of its outputs.
+    1. Generate API calls with `main.py`:
+    - Output: `apis.csv`
+    
+    2. Analyze and test the generated APIs using `pytorch_bug_analyzer.py`:
+    - Output: Buggy programs (if found) saved in `buggy-programs/`
+    - Final statistics are saved in `statistics.csv`.
